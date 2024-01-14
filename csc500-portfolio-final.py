@@ -75,6 +75,9 @@ def print_menu(cart):
         elif choice == 'r':
             itemToRemove = input("Enter the name of the item you wish to remove: ")
             cart.remove_item(itemToRemove)
+        elif choice == 'c':
+            itemToModify = input("Enter the name of the item you wish to modify: ")
+            cart.modify_item(itemToModify)
         elif choice == 'i':
             cart.print_descriptions()
         elif choice == 'o':
